@@ -76,8 +76,8 @@
   .tier .price{font-family:Georgia,serif;font-size:22px;font-weight:600;color:var(--accent-deep);white-space:nowrap}
   .tier .per{font-size:13px;color:var(--muted);font-weight:400;font-family:"Avenir Next",ui-sans-serif,system-ui,sans-serif;margin-left:2px}
   .tier p{margin:2px 0 0;font-size:13.5px;color:var(--muted);line-height:1.55}
-  .card.door{border-left-color:var(--dc,var(--accent))}
-  .card.door h3{display:flex;align-items:center;gap:9px}
+  .card.door{border-left-color:var(--dc,var(--accent));padding:20px 17px}
+  .card.door h3{display:flex;align-items:center;gap:9px;font-size:19px}
   .card.door .dot{width:11px;height:11px;border-radius:50%;background:var(--dc);flex:none}
   .tag{font-size:11px;padding:1px 8px;border-radius:999px;background:var(--accent);color:var(--onaccent);font-weight:600;margin-left:6px;transform:translateY(-1px);display:inline-block}
   .chips{display:flex;flex-wrap:wrap;gap:7px;margin:6px 0 4px}
@@ -167,13 +167,13 @@
     <div class="photo hero-photo img2" role="img" aria-label="Vanessa in a yoga pose beneath palm trees"></div>
     <p class="lbl">start anywhere</p>
     <div class="cards">
-      <button class="card door" data-go="about" style="--dc:#AF5A33"><h3><span class="dot"></span>About</h3><p>the story + the throughline</p></button>
-      <button class="card door" data-go="work" style="--dc:#3F7A70"><h3><span class="dot"></span>Work with Me</h3><p>yoga, coaching, workshops, Face HIIT</p></button>
-      <button class="card door" data-go="retreats" style="--dc:#7E6182"><h3><span class="dot"></span>Retreats</h3><p>gatherings, always alcohol-free</p></button>
-      <button class="card door" data-go="speaking" style="--dc:#C79A3E"><h3><span class="dot"></span>Speaking</h3><p>topics, reel, booking + pricing</p></button>
-      <button class="card door" data-go="words" style="--dc:#6E7D45"><h3><span class="dot"></span>My Words</h3><p>blog, recipes, essays, published pieces</p></button>
-      <button class="card door" data-go="books" style="--dc:#AF5A33"><h3><span class="dot"></span>Books</h3><p>the Sober Rebel guide + the memoir</p></button>
-      <button class="card door" data-go="music" style="--dc:#3F7A70"><h3><span class="dot"></span>Music</h3><p>the voice, coming to the room</p></button>
+      <button class="card door" data-go="about" style="--dc:#AF5A33"><h3><span class="dot"></span>About</h3></button>
+      <button class="card door" data-go="work" style="--dc:#3F7A70"><h3><span class="dot"></span>Work with Me</h3></button>
+      <button class="card door" data-go="retreats" style="--dc:#7E6182"><h3><span class="dot"></span>Retreats</h3></button>
+      <button class="card door" data-go="speaking" style="--dc:#C79A3E"><h3><span class="dot"></span>Speaking</h3></button>
+      <button class="card door" data-go="words" style="--dc:#6E7D45"><h3><span class="dot"></span>My Words</h3></button>
+      <button class="card door" data-go="books" style="--dc:#AF5A33"><h3><span class="dot"></span>Books</h3></button>
+      <button class="card door" data-go="music" style="--dc:#3F7A70"><h3><span class="dot"></span>Music</h3></button>
     </div>
   </section>
 
@@ -190,6 +190,7 @@
     <p class="body">Sober since December 9, 2020, I've spent the years since studying how bodies and minds come back to life - herbs, breath, movement, and the slow, honest work of telling the truth. I've been teaching yoga since 2013, and I coach from lived experience, not a pedestal.</p>
     <p class="body">I'm the founder of Beyond BARS Coaching, a nonprofit walking alongside people rebuilding after incarceration, rehab, and group homes, and the Head Hippie at Hippie Brews Co. My work stands on Three Pillars - Nourishment, Self-Care, and Personal Development - and my F.A.S.T. Method: Foundation, Accountability, Support, Tools.</p>
     <p class="body">Everybody's welcome here - every body, every background, every identity. I don't have it all figured out. I just keep showing up, keep learning, and bring people along with me.</p>
+    <p class="body">Made on the unceded ancestral land of the Ramaytush Ohlone.</p>
     <button class="btn" data-go="work">Work with me &rarr;</button>
     <p class="quote">You don't have to be finished to be worthy of the next step.</p>
   </section>
@@ -296,10 +297,9 @@
     </div>
     <p class="lbl">signature topics</p>
     <div class="cards">
-      <button class="card"><h3>A Hard F#&amp;%ing Left</h3><p>my story in poems and letters to my past - a raw, motivating share for your community</p></button>
-      <button class="card"><h3>Your First 90 Days</h3><p>reentry, reinvention, second chances</p></button>
-      <button class="card"><h3>Trauma-Informed Wellness</h3><p>for teams and communities</p></button>
       <button class="card"><h3>Your First 90 Days Beyond BARS</h3><p>a 12-week program</p></button>
+      <button class="card"><h3>A Hard F#&amp;%ing Left <span class="tag">memoir coming soon</span></h3><p>my story in poems and letters to my past - a raw, motivating share for your community</p></button>
+      <button class="card"><h3>The Sober Rebel Guide for Women</h3><p>Workshops based on the book - coming soon</p></button>
     </div>
     <p class="body" style="margin-top:22px">Guest-speaker packages and pricing on request - with my books, <em>A Hard F#&amp;%ing Left</em> and <em>The Sober Rebel Guide for Women</em>, available to feature as they release.</p>
     <a class="btn" href="https://calendar.app.google/3YRwEXKt2tPnfQkz9" target="_blank" rel="noopener">Book me to speak &rarr;</a>
@@ -385,7 +385,6 @@
   <div class="fcreds">Alcohol Recovery Coach &middot; RYT 500 &middot; Herbalist &middot; Founder, Beyond BARS Coaching</div>
   <div class="fcontact"><a href="mailto:Vanessa.Ragains@gmail.com">Vanessa.Ragains@gmail.com</a> &middot; Sober Rebel since 12/9/2020</div>
   <div class="sub">&copy; Vanessa Ragains</div>
-  <div class="sub">Made on the unceded ancestral land of the Ramaytush Ohlone.</div>
 </footer>
 
 </div>
