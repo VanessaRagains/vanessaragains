@@ -33,15 +33,13 @@
   .bar{max-width:900px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
   .mark{font-family:Georgia,serif;font-size:19px;font-weight:600;letter-spacing:.02em;display:flex;align-items:center;gap:8px;background:none;border:0;color:var(--ink);cursor:pointer}
   .mark .mark-logo{width:30px;height:30px;flex:none}
-  .mark .mark-stack{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15}
-  .mark .mark-stack .pronouns{margin:0}
   nav{display:flex;flex-wrap:wrap;gap:2px}
   nav button{background:none;border:0;color:var(--muted);font:inherit;font-size:14px;padding:7px 10px;border-radius:8px;cursor:pointer;transition:color .2s}
   nav button:hover{opacity:.65}
   nav button[aria-current="page"]{font-weight:700;text-decoration:underline;text-underline-offset:4px}
   .toggle{display:none;background:none;border:1px solid var(--line);border-radius:9px;padding:8px 10px;cursor:pointer;color:var(--ink);font-size:15px}
 
-  main{max-width:640px;margin:0 auto;padding:36px 22px 70px}
+  main{max-width:900px;margin:0 auto;padding:36px 22px 70px}
   section{display:none}
   section.active{display:block;animation:fade .5s ease}
   @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
@@ -51,8 +49,8 @@
   mark{background:linear-gradient(transparent 10%,var(--accent) 10%,var(--accent) 86%,transparent 86%);
     color:var(--onaccent);padding:0 .14em;border-radius:3px;display:inline-block;transform:rotate(-1.4deg);
     -webkit-box-decoration-break:clone;box-decoration-break:clone}
-  p.lede{font-size:18px;color:var(--ink);font-weight:500;margin:0 0 18px;max-width:44ch}
-  p.body{font-size:16px;color:#4E4638;margin:0 0 16px;max-width:48ch}
+  p.lede{font-size:18px;color:var(--ink);font-weight:500;margin:0 0 18px}
+  p.body{font-size:16px;color:#4E4638;margin:0 0 16px}
   .btn{display:inline-block;background:var(--accent);color:var(--onaccent);font-weight:700;padding:14px 24px;border-radius:999px;text-decoration:none;font-size:15px;border:0;cursor:pointer;margin-top:6px;transition:background-color .3s}
   .btn:hover{background:var(--accent-deep)}
   .btn:focus-visible,nav button:focus-visible,.mark:focus-visible,.card:focus-visible{outline:2px solid var(--accent-deep);outline-offset:3px}
@@ -145,7 +143,7 @@
 
 <header>
   <div class="bar">
-    <button class="mark" data-go="home" aria-label="Vanessa - home"><img src="logo-64.png" alt="" class="mark-logo"><span class="mark-stack">Vanessa<span class="pronouns">they/them</span></span></button>
+    <button class="mark" data-go="home" aria-label="Vanessa - home"><img src="logo-64.png" alt="" class="mark-logo">Vanessa</button>
     <button class="toggle" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav id="nav" aria-label="Sections">
       <button data-go="home" style="color:#B98D2E" aria-current="page">Home</button>
@@ -154,8 +152,8 @@
       <button data-go="retreats" style="color:#7E6182">Sober Retreats</button>
       <button data-go="speaking" style="color:#B98D2E">Speaking</button>
       <button data-go="words" style="color:#6E7D45">My Words</button>
-      <button data-go="books" style="color:#AF5A33">Books</button>
-      <button data-go="music" style="color:#3F7A70">Music</button>
+      <button data-go="books" style="color:#AF5A33">My Books</button>
+      <button data-go="music" style="color:#3F7A70">My Music</button>
     </nav>
   </div>
 </header>
@@ -174,8 +172,8 @@
       <button class="card door" data-go="retreats" style="--dc:#7E6182"><h3><span class="dot"></span>Sober Retreats</h3></button>
       <button class="card door" data-go="speaking" style="--dc:#C79A3E"><h3><span class="dot"></span>Speaking</h3></button>
       <button class="card door" data-go="words" style="--dc:#6E7D45"><h3><span class="dot"></span>My Words</h3></button>
-      <button class="card door" data-go="books" style="--dc:#AF5A33"><h3><span class="dot"></span>Books</h3></button>
-      <button class="card door" data-go="music" style="--dc:#3F7A70"><h3><span class="dot"></span>Music</h3></button>
+      <button class="card door" data-go="books" style="--dc:#AF5A33"><h3><span class="dot"></span>My Books</h3></button>
+      <button class="card door" data-go="music" style="--dc:#3F7A70"><h3><span class="dot"></span>My Music</h3></button>
     </div>
   </section>
 
@@ -184,14 +182,14 @@
     <p class="eyebrow">About</p>
     <h1 id="h-about" tabindex="-1">Rebuilt, and still <mark>building.</mark></h1>
     <p class="pronouns">they/them</p>
-    <p class="body">First, I live and work on the unceded land of the Ramaytush Ohlone people, who still are stewards of this land known today as the SF Bay Area.</p>
     <div class="about-head">
       <div class="photo portrait img1" role="img" aria-label="Portrait of Vanessa Ragains"></div>
       <div class="intro">
+        <p class="body">First, I live and work on the unceded land of the Ramaytush Ohlone people, who still are stewards of this land known today as the SF Bay Area.</p>
         <p class="lede">I'm Vanessa Ragains &mdash; a community herbalist, recovery coach, and yoga guide (RYT-500) on a mission to live to a hundred and help others build lives full of freedom, joy, and direction.</p>
+        <p class="body">Sober since December 9, 2020, I've spent the years since studying how bodies and minds come back to life &mdash; herbs, breath, movement, and the slow, honest work of telling the truth. I've been teaching yoga since 2013, and I coach from lived experience.</p>
       </div>
     </div>
-    <p class="body">Sober since December 9, 2020, I've spent the years since studying how bodies and minds come back to life &mdash; herbs, breath, movement, and the slow, honest work of telling the truth. I've been teaching yoga since 2013, and I coach from lived experience.</p>
     <p class="body">I'm the founder of Beyond BARS Coaching, a nonprofit walking alongside people rebuilding their lives after incarceration, rehab, and group homes, and the Sober Rebel Club, the community connected to that work. I'm also an Alcohol Recovery Coach on the Reframe app (affiliate link coming soon!).</p>
     <p class="body">This site is home to the REBEL Method &mdash; my personal 1:1 coaching and yoga offering, built for anyone exploring a more flexible, cutback or alcohol-free approach (no all-or-nothing required). It's separate from Beyond BARS, where sobriety is the goal, no questions asked. Both are held by the same Three Pillars &mdash; Nourishment, Self-Care, and Personal Development &mdash; and the same F.A.S.T. Method &mdash; Foundation, Accountability, Support, Tools &mdash; just shaped to fit each path. I also bring this coaching and yoga into nonprofits and recovery centers like Voices of Recovery.</p>
     <p class="body">Everybody's welcome here &mdash; every body, every background, every identity. I don't have it all figured out. I just keep showing up, keep learning, and bring people along with me.</p>
@@ -307,7 +305,7 @@
 
   <!-- BOOKS -->
   <section id="s-books" aria-labelledby="h-books">
-    <p class="eyebrow">Books</p>
+    <p class="eyebrow">My Books</p>
     <h1 id="h-books" tabindex="-1">The words, <mark>bound.</mark></h1>
     <p class="lede">Where my writing lands when it grows into something you can hold.</p>
     <div class="cards">
@@ -329,7 +327,7 @@
 
   <!-- MUSIC -->
   <section id="s-music" aria-labelledby="h-music">
-    <p class="eyebrow">Music</p>
+    <p class="eyebrow">My Music</p>
     <h1 id="h-music" tabindex="-1">The gift I stopped <mark>hiding.</mark></h1>
     <p class="lede">Songs from my own little room - the voice I'm finally letting out.</p>
     <div class="photo banner img5" role="img" aria-label="Vanessa in a quiet, natural moment"></div>
