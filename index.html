@@ -73,8 +73,7 @@
   .cards{display:flex;flex-direction:column;gap:11px}
   .card{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:12px;padding:15px 17px;text-align:left;cursor:default}
   button.card{cursor:pointer;width:100%;font:inherit;color:inherit;transition:transform .15s}
-  a.card{display:block;cursor:pointer;text-decoration:none;color:inherit;transition:transform .15s}
-  button.card:hover,a.card:hover{transform:translateX(3px)}
+  button.card:hover{transform:translateX(3px)}
   .card h3{margin:0;font-size:16px;font-weight:600}
   .card p{margin:3px 0 0;font-size:13px;color:var(--muted)}
   .card.door{border-left-color:var(--dc,var(--accent));padding:20px 17px}
@@ -240,10 +239,11 @@
         <h3>1:1 Coaching <span class="tag">limited spots</span></h3>
         <p>Deep, personal work - I keep it small on purpose. Messaging support, or messaging plus a monthly call - book a call to talk through fit and pricing.</p>
       </div>
-      <a class="card" href="https://reframeapp.com/coach?code=C92233" target="_blank" rel="noopener">
-        <h3>Coach Me on Reframe</h3>
-        <p>Working on cutting back or quitting? Connect with me as your Alcohol Recovery Coach right inside the Reframe app.</p>
-      </a>
+      <div class="card">
+        <h3>Find Me on Reframe</h3>
+        <p>Working on cutting back or quitting? Connect with me as your Alcohol Recovery Coach right inside the Reframe app.<br><a href="https://reframeapp.com/coach?code=C92233" target="_blank" rel="noopener" style="color:var(--accent-deep);font-weight:600">Connect with me on Reframe &rarr;</a></p>
+        <p style="margin-top:8px">Don't have the app yet? <a href="https://apps.apple.com/us/app/reframe-drink-less-thrive/id1485756576" target="_blank" rel="noopener" style="color:var(--accent-deep);font-weight:600">Download on iOS</a> &middot; <a href="https://play.google.com/store/apps/details?id=com.glucobit.reframe" target="_blank" rel="noopener" style="color:var(--accent-deep);font-weight:600">Download on Android</a></p>
+      </div>
       <div class="card">
         <h3>Yoga</h3>
         <p>trauma-informed &middot; RYT 500 &middot; virtual or in-person</p>
